@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://c0tfnlbfj8c65"]
+
+[ext_resource type="Texture2D" uid="uid://c8wny3wg6g2yb" path="res://assets/textures/explosion/regularExplosion00.png" id="1_ew515"]
+[ext_resource type="Texture2D" uid="uid://cd0lmjple26v4" path="res://assets/textures/explosion/regularExplosion01.png" id="2_6cxdk"]
+[ext_resource type="Texture2D" uid="uid://eyvcdciuh8av" path="res://assets/textures/explosion/regularExplosion02.png" id="3_4lvei"]
+[ext_resource type="Texture2D" uid="uid://dvbgseskokuma" path="res://assets/textures/explosion/regularExplosion03.png" id="4_7rlbx"]
+[ext_resource type="Texture2D" uid="uid://boyh8uveusbc0" path="res://assets/textures/explosion/regularExplosion04.png" id="5_8qgnu"]
+[ext_resource type="Texture2D" uid="uid://c2gsn0aw5h4ri" path="res://assets/textures/explosion/regularExplosion05.png" id="6_x43sf"]
+[ext_resource type="Texture2D" uid="uid://c60uhddyj2wyf" path="res://assets/textures/explosion/regularExplosion06.png" id="7_paiiv"]
+[ext_resource type="Texture2D" uid="uid://batmd3odgtruw" path="res://assets/textures/explosion/regularExplosion07.png" id="8_8kihm"]
+[ext_resource type="Texture2D" uid="uid://co13pckov56to" path="res://assets/textures/explosion/regularExplosion08.png" id="9_exbut"]
+[ext_resource type="AudioStream" uid="uid://gfbgiymb8i6f" path="res://assets/sound/sfx/Bomb Strike, Destroy, Variation (1).wav" id="10_q85pl"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gsv70"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ew515")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_6cxdk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_4lvei")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_7rlbx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_8qgnu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_x43sf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_paiiv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_8kihm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_exbut")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 8.0
+}]
+
+[node name="Explosion" type="Node2D" unique_id=2046755741]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1077556340]
+position = Vector2(574, 309)
+sprite_frames = SubResource("SpriteFrames_gsv70")
+autoplay = "default"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=262687459]
+stream = ExtResource("10_q85pl")
+autoplay = true

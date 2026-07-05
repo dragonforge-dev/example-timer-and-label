@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://28bbikfpcnxh"]
+
+[ext_resource type="Script" uid="uid://chitu6bbi4x5p" path="res://utilities/global.gd" id="1_26fps"]
+
+[node name="Global" type="Node" unique_id=399202309]
+script = ExtResource("1_26fps")
+
+[node name="Timer" type="Timer" parent="." unique_id=1936736204]
+wait_time = 90.0
+one_shot = true

@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://w2cncaysb3cr"]
+
+[ext_resource type="Script" uid="uid://c41a323d68ycl" path="res://ui/time_left_label.gd" id="1_ig7tw"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_gsv70"]
+font_size = 36
+
+[node name="Main" type="Control" unique_id=127292726]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TimeLeftLabel" type="Label" parent="." unique_id=1767419070]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Time Left:"
+label_settings = SubResource("LabelSettings_gsv70")
+script = ExtResource("1_ig7tw")
